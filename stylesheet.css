@@ -1,21 +1,166 @@
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.nav{
+@media(min-width:586px){
 
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    justify-content: left;
-    padding: 0px;
-    margin: 0px;
-    flex-wrap: wrap;
+    .nav{
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        justify-content: left;
+        padding: 0px;
+        margin: 0px;
+        flex-wrap: wrap;
+    }
+    .nav>div{
+        
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+    } 
+    .bag{
+        border: none; 
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+        display: block;
+    }
+    .improove{
+        width: 600px;
+        margin: auto;
+        font-size: 20px;
+    }
+    .btn{
+        padding:10px 20px ;
+        border: none;
+        background-color: black;
+        color: white;
+        margin-left:190px ;
+        font-size: 20px;
+        border-radius: 9px;
+        cursor: pointer;
+    
+    }
+    .flexbox{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+        /* width: 1500px; */
+    }
+    .flexcontainer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .comments{
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .book-cont{
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn1{
+        padding: 10px 10px 10px 10px;
+        background-color: rgb(46, 109, 245);
+        border: none;
+        border-radius: 20px;
+        color: aliceblue;
+        font-size: 20px;
+        margin-left: 210px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .flex3{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
-.nav>div{
-    background-color:inherit;
-    margin: 20px;
-    padding: 20px;
-    font-size: 20px;
+@media(max-width:586px){
+.nav{
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        justify-content: left;
+        padding: 0px;
+        margin: 0px;
+        flex-wrap: nowrap;
+    }
+    .nav>div{
+        
+        margin: 20px;
+        padding: 20px;
+        font-size: 20px;
+    }
+    .bag{
+        border: none; 
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        display: block;
+    }
+    .improove{
+        width: auto;
+        margin: auto;
+        font-size: 20px;
+    }
+    .btn{
+        padding:10px 20px ;
+        border: none;
+        background-color: black;
+        color: white;
+        /* padding: 10px 150px; */
+        margin-left:80px; 
+        font-size: 20px;
+        border-radius: 9px;
+        cursor: pointer;
+    }
+    .flexbox{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+        /* width: 1500px; */
+        padding-left: 30px;
+    }
+    .flexcontainer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-left: 20px;
+    }
+    .comments{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .book-cont{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn1{
+        /* padding: 10px 10px 10px 10px; */
+        background-color: rgb(46, 109, 245);
+        border: none;
+        border-radius: 20px;
+        color: aliceblue;
+        font-size: 20px;
+        margin-left: 70px;
+        margin-top: 10px; 
+        cursor: pointer;
+    }
+    .flex3{
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
 }
+
 a{
     text-decoration: none;
     color: rgb(54, 53, 53);
@@ -29,33 +174,13 @@ a:active{
     color: rgb(8, 214, 180);
     
 }
-.bag{
-    border: none; 
-    margin-left: auto;
-    margin-right: auto;
-    width: 700px;
-    display: block;
-}
-.improove{
-    width: 600px;
-    margin: auto;
-    font-size: 20px;
-}
+
+
 .greet{
     text-align: center;
     color: blueviolet;
 }
-.btn{
-    padding:10px 20px ;
-    border: none;
-    background-color: black;
-    color: white;
-    margin-left:190px ;
-    font-size: 20px;
-    border-radius: 9px;
-    cursor: pointer;
 
-}
 .card{
     /* border: 1px solid lightgray; */
     box-shadow: 0 2px 7px rgb(226, 226, 226);
@@ -67,13 +192,7 @@ a:active{
 }
 
 
-.flexbox{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: auto;
-    /* width: 1500px; */
-}
+
 .card2{
     /* border: 1px solid lightgray; */
     box-shadow: 0 2px 7px rgb(226, 226, 226);
@@ -83,24 +202,11 @@ a:active{
     margin: 10px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.flexcontainer{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.btn1{
-    padding: 10px 10px 10px 10px;
-    background-color: rgb(46, 109, 245);
-    border: none;
-    border-radius: 20px;
-    color: aliceblue;
-    font-size: 20px;
-    margin-left: 210px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-.flex3{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+
+
+
+.icons{
+    width: 30px;
+    display: block;
+    margin: 50px;
 }
